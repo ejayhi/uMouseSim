@@ -1,0 +1,22 @@
+uMouseSimulator
+
+I. Maze Environment
+   A. Has a 2d array of cells (usually 16x16, m x n)
+      i. Give mouse wall values of one cell
+	 a. Cell returnCell(Cell cell)
+	    i) returns a specific cell in the maze
+            ii) update floodfill implemented in mouse
+   B. Has to Generate a maze that is solvable
+      i. Maze uploadMaze(File Maze)
+         a. Uploads a maze from http://www.tcp4me.com/mmr/mazes/
+
+      ii. void displayMaze(Maze maze)
+         a. this should display the maze. unwanted in real simulation.
+	    mainly for debugging purposes.
+	  
+           
+Mouse
+
+
+Situation 1: The mouse can't see anything other than the the walls for
+the beginning cell (15,0)
