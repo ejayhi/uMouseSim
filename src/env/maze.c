@@ -1,5 +1,6 @@
 /**
  * name: ejayt
+ * date: 25 Feb 2013
  * team: pg
  * proj: umouse
  * file: maze.c 
@@ -7,19 +8,6 @@
  */
 
 #include "maze.h"
-
-int main() {
-    char mazeFilePath[] = "../../mazes/j1.maze.txt";
-    Maze maze = uploadMaze(mazeFilePath);
-    int i,j;
-    for(i=0;i<33;i++) {
-        for(j=0;j<33;j++) {
-            //printf("%c",maze.displayMap[i][j]);
-        }
-        printf("\n");
-    }
-
-}
 
 Maze determineWalls(Maze maze) {
     int i,j;
@@ -57,7 +45,7 @@ Maze uploadMaze(char mazeFilePath[]) {
     
     mazeFile = fopen(mazeFilePath,"r");
     if(!mazeFile) {
-        printf("Couldn't find maze file");
+        printf("Couldn't find maze file\n");
         exit(0);
     }
     else { 

@@ -21,11 +21,6 @@ typedef struct Cell {
     int west;  // west
 } Cell;
 
-int wallNorth(Cell cell); //returns 1 if cell has wall to north, 0 otherwise
-int wallEast(Cell cell); //returns 1 if cell has wall to east, 0 otherwise
-int wallSouth(Cell cell); //returns 1 if cell has wall to south, 0 otherwise
-int wallWest(Cell cell); // returns 1 if cell has wall to west, 0 otherwise
-
 typedef struct Maze { // a depiction of the maze
     Cell actualMap[MAZE_HEIGHT][MAZE_WIDTH];
     char displayMap[DISP_HEIGHT][DISP_WIDTH];
